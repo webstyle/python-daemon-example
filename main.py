@@ -3,7 +3,6 @@ import os
 import sys
 import atexit
 import logging
-import daemon
 
 
 def welcome_text(text):
@@ -100,7 +99,7 @@ class App:
 
 
 def main():
-    print(welcome_text('Python deamon example'))
+    print(welcome_text('Python daemon example'))
     command = sys.argv[1]
     app = App(command)
     print(app)
